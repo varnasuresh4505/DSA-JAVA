@@ -30,8 +30,8 @@ public class selectionSort
                 }
             }
             int temp=arr[min];
-            arr[min]=arr[i];
-            arr[i]=temp;
+            arr[min]=arr[i]; 
+            arr[i]=temp; 
         }
     }
 }
