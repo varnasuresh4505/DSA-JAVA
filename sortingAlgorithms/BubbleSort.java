@@ -11,9 +11,9 @@ public class BubbleSort
 		    arr[i]=sc.nextInt();
 		}
 		bubbleSort(arr,size);
-		for(int i=0;i<size;i++)
+		for(int num:arr)
 		{
-		    System.out.print(arr[i]+" ");
+		    System.out.print(num+" ");
 		}
 	}
 	public static void bubbleSort(int[] arr,int size)
