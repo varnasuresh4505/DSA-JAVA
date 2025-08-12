@@ -13,7 +13,7 @@ public class linearSearch
          int target=sc.nextInt();
          System.out.print(linearsearch(arr,target));
     }
-    public static int linearsearch(int[] arr,int target)
+    public static int linearsearch(int[] arr,int target) 
     {
         for(int i=0;i<arr.length;i++) 
         {
