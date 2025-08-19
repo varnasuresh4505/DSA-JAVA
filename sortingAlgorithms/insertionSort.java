@@ -19,16 +19,35 @@ public class InsertionSort
     }
     public static void insertionsort(int[] arr,int size)
     {
-        for(int i=1;i<size;i++) 
-        {
-            int key=arr[i];
-            int j=i-1;
-            while(j>=0 && arr[j]>key)
-            {
-                arr[j+1]=arr[j];
-                j=j-1;
-            }
-            arr[j+1]=key;
-        }
+        for(int i=1;i<size;i++)
+		{
+		    boolean isSwap=false;
+		    for(int j=i;j>0;j--)
+		    {
+		        if(arr[j]<arr[j-1])
+		        {
+		            int temp=arr[j];
+		            arr[j]=arr[j-1];
+		            arr[j-1]=temp;
+		            isSwap=true;
+		        }
+		        else
+		        {
+		            break;
+		        }
+		    }
+		    if(isSwap)
+		    {
+		        prints(arr);
+		    }
+		}
     } 
+    public static void prints(int[] arr)
+	{
+	    for(int i=0;i<arr.length;i++)
+	    {
+	        System.out.print(arr[i]+" ");
+	    }
+	    System.out.println();
+	}
 }

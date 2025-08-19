@@ -11,11 +11,6 @@ public class SelectionSort
             arr[i]=sc.nextInt();
         }
         selectionsort(arr,size);
-        for(int num:arr)
-        {
-            System.out.print(num+" ");
-        }
-
     }
     public static void selectionsort(int[] arr,int size)
     {
@@ -31,7 +26,16 @@ public class SelectionSort
             }
             int temp=arr[min];
             arr[min]=arr[i]; 
-            arr[i]=temp;   
+            arr[i]=temp; 
+            prints(arr);
         }
+    }
+    public static void prints(int[] arr)
+    {
+        for(int i=0;i<arr.length;i++) 
+        {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
     }
 }
